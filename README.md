@@ -130,17 +130,3 @@ Zomato-Data-Analysis/
 ├── README.md
 └── Visualizations/
 ```
-
----
-
-## 👩‍💻 Author
-
-**Samridhi Gupta**
-
-* Data Analyst | Python | SQL | Power BI
-* GitHub: (https://github.com/samgupta221)
-* LinkedIn: [https://www.linkedin.com/in/samridhi-gupta-532659256](https://www.linkedin.com/in/samridhi-gupta-532659256)
-
----
-
-⭐ If you found this project useful, don't forget to star the repository.
