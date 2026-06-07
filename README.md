@@ -1,26 +1,18 @@
-#  Zomato Data Analysis Project
+# 🍽️ Zomato Restaurant Data Analysis Using Python
 
 ## 📌 Project Overview
 
-This project analyzes Zomato restaurant data using **Python, Pandas, Matplotlib, and Seaborn** to uncover insights about restaurant types, ratings, customer votes, online ordering preferences, and pricing trends.
+This project focuses on performing **Exploratory Data Analysis (EDA)** on Zomato restaurant data to uncover customer ordering behavior, restaurant performance, and rating trends. The analysis helps identify factors influencing customer preferences and provides actionable insights for restaurant owners and food delivery platforms.
 
-The goal is to perform **Exploratory Data Analysis (EDA)** and visualize key patterns that influence restaurant popularity and customer behavior.
+Using **Python, Pandas, Matplotlib, and Seaborn**, the dataset was cleaned, analyzed, and visualized to answer important business questions related to restaurant types, ratings, votes, online ordering preferences, and customer spending patterns.
 
 ---
 
-## 📂 Dataset Information
+## 🎯 Business Questions Addressed
 
-The dataset contains information about restaurants, including:
-
-* Restaurant Name
-* Online Order Availability
-* Table Booking Availability
-* Ratings
-* Number of Votes
-* Approximate Cost for Two People
-* Restaurant Type
-
-**Dataset Size:** 148 Records × 7 Columns
+* What type of restaurant do the majority of customers order from?
+* How many votes has each type of restaurant received from customers?
+* What ratings do most restaurants receive?
 
 ---
 
@@ -35,98 +27,150 @@ The dataset contains information about restaurants, including:
 
 ---
 
-## 📊 Analysis Performed
+## 📂 Dataset Information
 
-### 1. Data Cleaning
+The dataset contains information about restaurants listed on Zomato, including:
 
-* Loaded dataset using Pandas
-* Converted restaurant ratings into numeric format
-* Checked data structure and column information
-
-### 2. Restaurant Type Analysis
-
-* Counted restaurants by category
-* Identified the most common restaurant types
-
-### 3. Customer Engagement Analysis
-
-* Analyzed votes received by different restaurant categories
-* Compared customer preferences across restaurant types
-
-### 4. Ratings Analysis
-
-* Examined rating distribution
-* Identified trends in customer satisfaction
-
-### 5. Cost Analysis
-
-* Studied approximate dining costs for two people
-* Visualized pricing distribution
-
-### 6. Online Ordering Impact
-
-* Compared ratings of restaurants with and without online ordering
-* Analyzed customer preferences related to online services
-
-### 7. Heatmap Visualization
-
-* Created a heatmap to explore relationships between restaurant types and online ordering availability
+* Restaurant Name
+* Restaurant Type
+* Online Order Availability
+* Table Booking Availability
+* Votes
+* Ratings
+* Approximate Cost for Two People
+* Order Mode (Online/Offline)
 
 ---
 
-## 📈 Key Insights
+## 🧹 Data Cleaning Process
 
-* Certain restaurant categories receive significantly higher customer votes.
-* Restaurants offering online ordering generally attract greater customer engagement.
-* Most restaurants fall within a moderate price range.
-* Ratings are concentrated around higher values, indicating overall customer satisfaction.
-* Restaurant type plays an important role in customer preferences and voting behavior.
+The following preprocessing steps were performed:
+
+### 1. Missing Value Handling
+
+* Identified and handled missing values.
+* Removed or imputed null entries where required.
+
+### 2. Data Type Conversion
+
+* Converted ratings and cost columns into appropriate numeric formats.
+* Standardized categorical values for analysis.
+
+### 3. Duplicate Removal
+
+* Removed duplicate records to ensure data quality.
+
+### 4. Data Validation
+
+* Checked for inconsistencies in restaurant types and ordering modes.
+* Standardized category names.
 
 ---
 
-## 📷 Visualizations Included
+## 📊 Exploratory Data Analysis
 
-* Count Plot
-* Line Plot
-* Histogram
-* Box Plot
-* Heatmap
+### 1️⃣ Restaurant Type Distribution
+
+**Objective:** Identify the restaurant types preferred by customers.
+
+**Visualization:** Count Plot
+
+**Insights:**
+
+* Certain restaurant categories dominate customer orders.
+* Helps identify the most popular dining segments.
 
 ---
 
-## 🚀 How to Run the Project
+### 2️⃣ Votes by Restaurant Type
+
+**Objective:** Analyze customer engagement through votes.
+
+**Visualization:** Bar Chart
+
+**Insights:**
+
+* Popular restaurant types attract significantly higher votes.
+* Votes indicate customer trust and visibility.
+
+---
+
+### 3️⃣ Restaurant Ratings Distribution
+
+**Objective:** Understand overall restaurant performance.
+
+**Visualization:** Histogram
+
+**Insights:**
+
+* Most restaurants cluster around a common rating range.
+* Extremely high and low ratings are relatively uncommon.
+
+---
+
+## 📈 Key Findings
+
+✔ Certain restaurant types dominate customer ordering behavior.
+
+✔ Higher customer votes are concentrated among popular restaurant categories.
+
+✔ Most restaurant ratings fall within a moderate-to-high range.
+
+---
+
+## 🚀 Business Impact
+
+The insights generated from this analysis can help:
+
+* Improve restaurant marketing strategies.
+* Enhance customer engagement.
+* Increase online ordering adoption.
+* Optimize promotional campaigns.
+* Support data-driven business decisions for restaurants and food delivery platforms.
+
+---
+
+## ▶️ How to Run
+
+### 1. Clone the Repository
 
 ```bash
-# Clone Repository
-git clone https://github.com/your-username/zomato-data-analysis.git
+https://github.com/samgupta221/Zomatodata_Analysis.git
+```
 
-# Open Project Folder
-cd zomato-data-analysis
+### 2. Install Dependencies
 
-# Install Required Libraries
+```bash
 pip install pandas numpy matplotlib seaborn
+```
 
-# Launch Jupyter Notebook
+### 3. Launch Jupyter Notebook
+
+```bash
 jupyter notebook
 ```
 
-Open:
+### 4. Open the Notebook
 
 ```bash
 Zomato_Project.ipynb
 ```
 
-and run all cells.
+### 5. Run All Cells
+
+Execute all notebook cells sequentially to reproduce the analysis.
 
 ---
 
-## 📁 Project Structure
+## 📷 Sample Visualizations
 
-```text
-Zomato-Data-Analysis/
-│
-├── Zomato data.csv
-├── Zomato_Project.ipynb
-├── README.md
-└── Visualizations/
-```
+* Restaurant Type Distribution
+<img width="868" height="558" alt="restaurant_type_distribution png" src="https://github.com/user-attachments/assets/ffd876b9-3c9f-40d2-a495-aeb0b941f908" />
+
+* Votes by Restaurant Type
+<img width="859" height="580" alt="votes_by_restaurant_type png" src="https://github.com/user-attachments/assets/c893a62e-8005-497c-a291-ff4b9c528468" />
+
+* Ratings Distribution
+<img width="801" height="533" alt="ratings_distribution png" src="https://github.com/user-attachments/assets/eb52a5fa-85df-495e-b56f-4d5f58c36cdb" />
+
+---
