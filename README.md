@@ -130,38 +130,6 @@ The insights generated from this analysis can help:
 
 ---
 
-## ▶️ How to Run
-
-### 1. Clone the Repository
-
-```bash
-https://github.com/samgupta221/Zomatodata_Analysis.git
-```
-
-### 2. Install Dependencies
-
-```bash
-pip install pandas numpy matplotlib seaborn
-```
-
-### 3. Launch Jupyter Notebook
-
-```bash
-jupyter notebook
-```
-
-### 4. Open the Notebook
-
-```bash
-Zomato_Project.ipynb
-```
-
-### 5. Run All Cells
-
-Execute all notebook cells sequentially to reproduce the analysis.
-
----
-
 ## 📷 Sample Visualizations
 
 * Restaurant Type Distribution
